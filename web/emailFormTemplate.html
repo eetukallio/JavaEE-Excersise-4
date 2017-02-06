@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css"
+          integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+
+<div>
+    <form class="pure-form" action="/lesson4/EmailServlet" method="post">
+        <fieldset class="pure-group">
+            <input type="email" name="from" class="pure-input-1-2" placeholder="From">
+            <input type="email" name="to" class="pure-input-1-2" placeholder="To">
+        </fieldset>
+
+        <fieldset class="pure-group">
+            <input type="text" name="subject" class="pure-input-1-2" placeholder="Subject">
+            <textarea class="pure-input-1-2" name="message" placeholder="Message"></textarea>
+        </fieldset>
+
+        <button type="submit" class="pure-button pure-input-1-2 pure-button-primary">Send</button>
+        <button onclick="location.href='/lesson4/EmailTable'" type="button" class="pure-button pure-input-1-2 pure-button-primary">Show messages</button>
+
+    </form>
+</div>
+</body>
+</html>
